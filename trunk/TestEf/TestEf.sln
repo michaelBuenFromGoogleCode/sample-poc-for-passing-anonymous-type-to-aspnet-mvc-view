@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEf", "TestEf\TestEf.csproj", "{C8E30955-9487-4EEE-A7FB-ABDCF94BA51A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicJson", "DynamicJson\DynamicJson.csproj", "{C64B6BAE-728E-405C-BDAA-B5204FAB262A}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E30955-9487-4EEE-A7FB-ABDCF94BA51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E30955-9487-4EEE-A7FB-ABDCF94BA51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E30955-9487-4EEE-A7FB-ABDCF94BA51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E30955-9487-4EEE-A7FB-ABDCF94BA51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64B6BAE-728E-405C-BDAA-B5204FAB262A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64B6BAE-728E-405C-BDAA-B5204FAB262A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64B6BAE-728E-405C-BDAA-B5204FAB262A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64B6BAE-728E-405C-BDAA-B5204FAB262A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
