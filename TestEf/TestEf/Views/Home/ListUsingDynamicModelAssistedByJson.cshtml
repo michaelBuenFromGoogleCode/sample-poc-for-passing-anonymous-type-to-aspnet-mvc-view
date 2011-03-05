@@ -1,0 +1,57 @@
+﻿@model dynamic 
+           
+@using DynamicJson.Extensions
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+
+
+    
+    @{ dynamic r = ((string)Model).JsDeserialize(); }
+
+    <table>
+        <tr>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Firstname
+            </th>
+            <th>
+                FavoriteNumber
+            </th>
+            <th>Qualified</th>
+        </tr>
+
+    
+    @foreach (var item in r) {
+        <tr>
+            <td>
+                @item.Person.Lastname
+            </td>
+            <td>
+                @item.Person.Firstname
+            </td>
+            <td>
+                @item.Person.FavoriteNumber
+            </td>
+            <td>
+                <input type="checkbox" disabled="disabled" @(item.IsQualified ? "checked" : "") />
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
+

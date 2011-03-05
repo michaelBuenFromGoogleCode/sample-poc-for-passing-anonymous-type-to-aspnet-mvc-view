@@ -1,0 +1,54 @@
+﻿@model IEnumerable<TestEf.Models.QualifiedStatus>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+
+    
+    <table>
+        <tr>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Firstname
+            </th>
+            <th>
+                FavoriteNumber
+            </th>
+            <th>Qualified</th>
+        </tr>
+    
+
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Person.Lastname
+            </td>
+            <td>
+                @item.Person.Firstname
+            </td>
+            <td>
+                @item.Person.FavoriteNumber
+            </td>
+            <td>                
+                <input type="checkbox" disabled="disabled" @(item.IsQualified ? "checked" : "") />
+            </td>
+        </tr>
+    }
+    
+    
+    </table>
+</body>
+</html>
+
