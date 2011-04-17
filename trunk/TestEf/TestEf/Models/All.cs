@@ -30,7 +30,7 @@ namespace TestEf.Models
         public DbSet<Person> Persons { get; set; }
         public DbSet<Qualified> Qualifieds { get; set; }
 
-        protected override void OnModelCreating(System.Data.Entity.ModelConfiguration.ModelBuilder modelBuilder)
+        protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 

@@ -30,7 +30,8 @@ namespace TestEf.Controllers
                          from l in pQ.DefaultIfEmpty()
                          orderby p.Lastname
                          select new QualifiedStatus { Person = p, IsQualified = l != null })
-                        .Skip(0).Take(10) // do the paging logic here
+                         .LimitAndOffset(10,1)
+                        // .Skip(0).Take(10) // do the paging logic here
                         .ToList();
 
                 return View(r);
@@ -47,7 +48,8 @@ namespace TestEf.Controllers
                          from l in pQ.DefaultIfEmpty()
                          orderby p.Lastname
                          select new { Person = p, IsQualified = l != null })
-                        .Skip(0).Take(10) // do the paging logic here
+                        .LimitAndOffset(10,1)
+                        // .Skip(0).Take(10) // do the paging logic here
                         .ToList(); 
 
                 
