@@ -1,0 +1,1 @@
+Sample POC for passing anonymous type to ASP.NET MVC's View
